@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="js/main.js" defer></script>
+        <link rel="stylesheet" href="css/main.css" />
+        <title>Recipe App</title>
+    </head>
+    <body>
+        <section>
+            <div class="container">
+                <h1>Recipe Search</h1>
+                <form action="">
+                    <input type="text" placeholder="Search for Recipe..." />
+                    <button
+                        type="submit"
+                        class="search-btn btn"
+                        id="search-btn"
+                    >
+                        <img
+                            class="search-icon"
+                            src="./search-icon.svg"
+                            alt=""
+                        />
+                    </button>
+                </form>
+                <div class="search-result">
+                    <div class="item">
+                        <!-- meal item -->
+                        <img src="./placeholder.jpg" alt="" />
+                        <div class="flex-container">
+                            <h1 class="title">This is a recipe title</h1>
+                            <a href="#" class="view-button">View Recipe</a>
+                        </div>
+                        <!-- end meal item -->
+                    </div>
+                    <div class="item">
+                        <!-- meal item -->
+                        <img src="./placeholder.jpg" alt="" />
+                        <div class="flex-container">
+                            <h1 class="title">This is a recipe title</h1>
+                            <a href="#" class="view-button">View Recipe</a>
+                        </div>
+                        <!-- end meal item -->
+                    </div>
+                    <div class="item">
+                        <!-- meal item -->
+                        <img src="./placeholder.jpg" alt="" />
+                        <div class="flex-container">
+                            <h1 class="title">This is a recipe title</h1>
+                            <a href="#" class="view-button">View Recipe</a>
+                        </div>
+                        <!-- end meal item -->
+                    </div>
+                </div>
+                <div class="item-details">
+                    <!-- recipe close btn -->
+                    <button
+                        class="btn recipe-close-btn"
+                        id="recipe-close-btn"
+                        type="button"
+                    >
+                        <img
+                            class="search-icon"
+                            src="./close-icon.svg"
+                            alt=""
+                        />
+                    </button>
+                    <!-- meal content for modal -->
+                    <div class="item-detail-content">
+                        <h2 class="recipe-title">Meal Name Here</h2>
+                        <p class="recipe-category">Category Name</p>
+                        <div class="recipe-instr">
+                            <h3>Instructions</h3>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur
+                                adipisicing elit. Esse reprehenderit omnis neque
+                                alias accusantium possimus iure? Cupiditate
+                                obcaecati velit praesentium laudantium, eveniet
+                                magni excepturi ipsum cum odio optio esse ad.
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Molestiae voluptate sapiente
+                                earum. Nisi, laudantium quam at ea dolorem fugit
+                                odit.
+                            </p>
+                        </div>
+                        <div class="recipe-meal-img">
+                            <img src="./placeholder.jpg" alt="">
+                        </div>
+                        <div class="recipe-link">
+                            <a href="#" target="_blank">Watch Video</a>
+                        </div>
+                        <!-- end meal content for modal -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
