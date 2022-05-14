@@ -11,88 +11,88 @@
     <body>
         <section>
             <div class="container">
-                <h1>Recipe Search</h1>
-                <form action="">
-                    <input
-                        type="text"
-                        id="search-input"
-                        placeholder="Search for Recipe..."
-                    />
-                    <button
-                        type="submit"
-                        class="search-btn btn"
-                        id="search-btn"
-                    >
-                        <img
-                            class="search-icon"
-                            src="./search-icon.svg"
-                            alt=""
-                        />
-                    </button>
-                </form>
-                <div class="search-result">
-                    <div class="item">
-                        <img src="./placeholder.jpg" alt="" />
-                        <div class="flex-container">
-                            <h1 class="title">This is a recipe title</h1>
-                            <a href="#" class="view-button">View Recipe</a>
+                <div class="meal-wrapper">
+                    <div class="meal-search">
+                        <h2 class="title">Find Meals for Your Ingredients</h2>
+                        <div class="meal-serach-box">
+                            <input
+                                type="text"
+                                class="search-control"
+                                placeholder="Enter an ingredient"
+                                id="search-input"
+                            />
+                            <button
+                                type="submit"
+                                class="search-btn btn"
+                                id="search-btn"
+                            >
+                                <img
+                                    class="search-icon"
+                                    src="./search-icon.svg"
+                                    alt=""
+                                />
+                            </button>
                         </div>
                     </div>
-                    <div class="item">
-                        <img src="./placeholder.jpg" alt="" />
-                        <div class="flex-container">
-                            <h1 class="title">This is a recipe title</h1>
-                            <a href="#" class="view-button">View Recipe</a>
+                    <div class="meal-result">
+                        <h2 class="title">Your Search Results:</h2>
+                        <div id="meal">
+                            <!-- meal item -->
+                            <div class="meal-item">
+                                <div class="meal-img">
+                                    <img src="food.jpg" alt="food" />
+                                </div>
+                                <div class="meal-name">
+                                    <h3>Potato Chips</h3>
+                                    <a href="#" class="recipe-btn"
+                                        >Get Recipe</a
+                                    >
+                                </div>
+                            </div>
+                            <!-- end of meal item -->
                         </div>
                     </div>
-                    <div class="item">
-                        <img src="./placeholder.jpg" alt="" />
-                        <div class="flex-container">
-                            <h1 class="title">This is a recipe title</h1>
-                            <a href="#" class="view-button">View Recipe</a>
+                    <div class="meal-details">
+                        <!-- recipe close btn -->
+                        <button
+                            class="btn recipe-close-btn"
+                            id="recipe-close-btn"
+                            type="button"
+                        >
+                            <img
+                                class="close-icon"
+                                src="./close-icon.svg"
+                                alt=""
+                            />
+                        </button>
+                        <!-- meal content -->
+                        <div class="meal-details-content">
+                            <hs class="recipe-title">Meal Name Here</hs>
+                            <p class="recipe-category">Category Name</p>
+                            <div class="recipe-instruct">
+                                <h3>Instructions</h3>
+                                <p>
+                                    Lorem ipsum, dolor sit amet consectetur
+                                    adipisicing elit. Iusto officia ipsa tenetur
+                                    dignissimos quibusdam, soluta tempora ad,
+                                    eum dolore, assumenda reiciendis laboriosam
+                                    in commodi autem aliquid est voluptas
+                                    cupiditate quod.
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Quisquam odio architecto
+                                    nihil dolor eveniet quasi eius in. Quo, id
+                                    ullam!
+                                </p>
+                            </div>
+                            <div class="recipe-meal-img">
+                                <img src="food.jpg" alt="" />
+                            </div>
+                            <div class="recipe-link">
+                                <a href="#" target="_blank">Watch Video</a>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="item-details">
-                    <!-- recipe close btn -->
-                    <button
-                        class="btn recipe-close-btn"
-                        id="recipe-close-btn"
-                        type="button"
-                    >
-                        <img
-                            class="search-icon"
-                            src="./close-icon.svg"
-                            alt=""
-                        />
-                    </button>
-                    <!-- meal content for modal -->
-                    <div class="item-detail-content">
-                        <h2 class="recipe-title">Meal Name Here</h2>
-                        <p class="recipe-category">Category Name</p>
-                        <div class="recipe-instr">
-                            <h3>Instructions</h3>
-                            <p>
-                                Lorem ipsum dolor sit, amet consectetur
-                                adipisicing elit. Esse reprehenderit omnis neque
-                                alias accusantium possimus iure? Cupiditate
-                                obcaecati velit praesentium laudantium, eveniet
-                                magni excepturi ipsum cum odio optio esse ad.
-                            </p>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Molestiae voluptate sapiente
-                                earum. Nisi, laudantium quam at ea dolorem fugit
-                                odit.
-                            </p>
-                        </div>
-                        <div class="recipe-meal-img">
-                            <img src="./placeholder.jpg" alt="" />
-                        </div>
-                        <div class="recipe-link">
-                            <a href="#" target="_blank">Watch Video</a>
-                        </div>
-                        <!-- end meal content for modal -->
                     </div>
                 </div>
             </div>
