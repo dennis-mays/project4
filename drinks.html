@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="js/drinks.js" defer></script>
+        <link rel="stylesheet" href="css/drinks.css" />
+        <title>Drink App</title>
+    </head>
+    <body>
+        <section>
+            <div class="container">
+                <div class="drink-wrapper">
+                    <div class="drink-search">
+                        <h2 class="title">Drink Search</h2>
+                        <div class="drink-search-box">
+                            <input
+                                type="text"
+                                class="search-control"
+                                placeholder="Enter an ingredient"
+                                id="search-input"
+                            />
+                            <button
+                                type="submit"
+                                class="search-btn btn"
+                                id="search-btn"
+                            >
+                                <img
+                                    class="search-icon"
+                                    src="./search-icon.svg"
+                                    alt=""
+                                />
+                            </button>
+                        </div>
+                    </div>
+                    <div class="drink-result">
+                        <h2 class="title hideRecipe" id="searchResultTitle">
+                            Search Results:
+                        </h2>
+                        <div id="drink">
+                            <!-- drink item -->
+                            <!-- <div class="drink-item">
+                                <div class="drink-img">
+                                    <img src="food.jpg" alt="food" />
+                                </div>
+                                <div class="drink-name">
+                                    <h3>Potato Chips</h3>
+                                    <a href="#" class="recipe-btn"
+                                        >Get Recipe</a
+                                    >
+                                </div>
+                            </div> -->
+                            <!-- end of drink item -->
+                        </div>
+                    </div>
+                    <div class="drink-details">
+                        <!-- recipe close btn -->
+                        <button
+                            class="btn recipe-close-btn"
+                            id="recipe-close-btn"
+                            type="button"
+                        >
+                            <img
+                                class="close-icon"
+                                src="./close-icon.svg"
+                                alt=""
+                            />
+                        </button>
+                        <!-- drink content -->
+                        <div class="drink-details-content">
+                            <!-- <h2 class="recipe-title">drink Name Here</h2>
+                            <p class="recipe-category">Category Name</p>
+                            <div class="recipe-instruct">
+                                <h3>Instructions</h3>
+                                <p>
+                                    Lorem ipsum, dolor sit amet consectetur
+                                    adipisicing elit. Iusto officia ipsa tenetur
+                                    dignissimos quibusdam, soluta tempora ad,
+                                    eum dolore, assumenda reiciendis laboriosam
+                                    in commodi autem aliquid est voluptas
+                                    cupiditate quod.
+                                </p>
+                            </div>
+                            <div class="recipe-drink-img">
+                                <img src="food.jpg" alt="" />
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
