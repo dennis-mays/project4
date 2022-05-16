@@ -63,10 +63,20 @@ function getMealRecipe(e) {
 function mealRecipeModal(meal) {
     console.log(meal);
     meal = meal[0];
+    console.log(meal.strIngredient12);
+    let ingredients = "";
+    for (let i = 1; meal[`strIngredient${i}`]; i++) {
+        ingredients +=
+            `${meal[`strMeasure${i}`]} ${meal[`strIngredient${i}`]}` + "<br>";
+    }
+    console.log(ingredients);
+
     let html = `
         <h2 class = "recipe-title">${meal.strMeal}</h2>
         <p class = "recipe-category">${meal.strCategory}</p>
         <div class = "recipe-instruct">
+            <h3>Ingredients:</h3>
+            <p>${ingredients}</p>
             <h3>Instructions:</h3>
             <p>${meal.strInstructions}</p>
         </div>
