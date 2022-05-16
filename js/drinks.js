@@ -63,10 +63,17 @@ function getdrinkRecipe(e) {
 function drinkRecipeModal(drink) {
     console.log(drink);
     drink = drink[0];
+    let ingredients = "";
+    for (let i = 1; drink[`strIngredient${i}`]; i++) {
+        ingredients +=
+            `${drink[`strMeasure${i}`]} ${drink[`strIngredient${i}`]}` + "<br>";
+    }
     let html = `
         <h2 class = "recipe-title">${drink.strDrink}</h2>
         <p class = "recipe-category">${drink.strCategory}</p>
         <div class = "recipe-instruct">
+            <h3>Ingredients:</h3>
+            <p>${ingredients}</p>
             <h3>Instructions:</h3>
             <p>${drink.strInstructions}</p>
         </div>
