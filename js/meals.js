@@ -1,10 +1,16 @@
 const searchBtn = document.getElementById("search-btn");
+const searchForm = document.querySelector("form");
 const mealList = document.getElementById("meal");
 const mealDetailsContent = document.querySelector(".meal-details-content");
 const recipeCloseBtn = document.getElementById("recipe-close-btn");
 
 // event listeners
 searchBtn.addEventListener("click", getMealList);
+searchForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    searchQuery = e.target.querySelector("input").value;
+    getMealList;
+});
 mealList.addEventListener("click", getMealRecipe);
 recipeCloseBtn.addEventListener("click", () => {
     mealDetailsContent.parentElement.classList.remove("showRecipe");
