@@ -197,6 +197,10 @@ section {
     display: block;
 }
 
+.hideRecipe {
+    display: none;
+}
+
 .meal-details-content {
     margin: 2rem;
 }

@@ -34,6 +34,9 @@ function getMealList() {
                 `;
                 });
                 mealList.classList.remove("notFound");
+                document
+                    .querySelector("#searchResultTitle")
+                    .classList.remove("hideRecipe");
             } else {
                 html = "Sorry, we didn't find any meal!";
                 mealList.classList.add("notFound");
