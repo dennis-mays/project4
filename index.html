@@ -4,94 +4,24 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <script src="js/main.js" defer></script>
         <link rel="stylesheet" href="css/main.css" />
-        <title>Recipe App</title>
+        <title>Recipe / Drink App</title>
     </head>
     <body>
         <section>
-            <div class="container">
-                <div class="meal-wrapper">
-                    <div class="meal-search">
-                        <h2 class="title">Recipe Search</h2>
-                        <div class="meal-search-box">
-                            <input
-                                type="text"
-                                class="search-control"
-                                placeholder="Enter an ingredient"
-                                id="search-input"
-                            />
-                            <button
-                                type="submit"
-                                class="search-btn btn"
-                                id="search-btn"
-                            >
-                                <img
-                                    class="search-icon"
-                                    src="./search-icon.svg"
-                                    alt=""
-                                />
-                            </button>
-                        </div>
-                    </div>
-                    <div class="meal-result">
-                        <h2 class="title hideRecipe" id="searchResultTitle">
-                            Search Results:
-                        </h2>
-                        <div id="meal">
-                            <!-- meal item -->
-                            <!-- <div class="meal-item">
-                                <div class="meal-img">
-                                    <img src="food.jpg" alt="food" />
-                                </div>
-                                <div class="meal-name">
-                                    <h3>Potato Chips</h3>
-                                    <a href="#" class="recipe-btn"
-                                        >Get Recipe</a
-                                    >
-                                </div>
-                            </div> -->
-                            <!-- end of meal item -->
-                        </div>
-                    </div>
-                    <div class="meal-details">
-                        <!-- recipe close btn -->
-                        <button
-                            class="btn recipe-close-btn"
-                            id="recipe-close-btn"
-                            type="button"
-                        >
-                            <img
-                                class="close-icon"
-                                src="./close-icon.svg"
-                                alt=""
-                            />
-                        </button>
-                        <!-- meal content -->
-                        <div class="meal-details-content">
-                            <!-- <h2 class="recipe-title">Meal Name Here</h2>
-                            <p class="recipe-category">Category Name</p>
-                            <div class="recipe-instruct">
-                                <h3>Instructions</h3>
-                                <p>
-                                    Lorem ipsum, dolor sit amet consectetur
-                                    adipisicing elit. Iusto officia ipsa tenetur
-                                    dignissimos quibusdam, soluta tempora ad,
-                                    eum dolore, assumenda reiciendis laboriosam
-                                    in commodi autem aliquid est voluptas
-                                    cupiditate quod.
-                                </p>
-                            </div>
-                            <div class="recipe-meal-img">
-                                <img src="food.jpg" alt="" />
-                            </div>
-                            <div class="recipe-link">
-                                <a href="#" target="_blank">Watch Video</a>
-                            </div> -->
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <div class="title">Select search type</div>
+            <button type="submit" class="meal-btn btn">
+                <a href="./meals.html"
+                    ><img class="meal-img" src="images/meal.jpg" alt=""
+                /></a>
+                <a href="./meals.html" class="search-btn">Search Meals</a>
+            </button>
+            <button type="submit" class="drink-btn btn">
+                <a href="./drinks.html"
+                    ><img class="drink-img" src="images/drink.jpg" alt=""
+                /></a>
+                <a href="./drinks.html" class="search-btn">Search Drinks</a>
+            </button>
         </section>
     </body>
 </html>
