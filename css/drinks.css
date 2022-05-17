@@ -26,6 +26,38 @@ img {
     object-fit: cover;
 }
 
+nav {
+    background-color: var(--light-cream);
+}
+
+.home-btn,
+.drink-btn {
+    width: 10rem;
+    height: 3.5rem;
+    font-size: 1.1rem;
+    background: var(--light-red);
+    color: var(--light-cream);
+    border: 1px solid var(--light-red);
+    border-radius: 2rem;
+    margin: 1rem;
+    transition: all 0.4s linear;
+    text-decoration: none;
+    padding: 0.8rem 0;
+    display: inline-block;
+    text-align: center;
+    transition: all 0.4s linear;
+}
+
+.home-btn:hover,
+.drink-btn:hover {
+    background: var(--dark-green);
+}
+
+button a {
+    text-decoration: none;
+    color: var(--light-cream);
+}
+
 section {
     min-height: 100vh;
     width: 100%;
