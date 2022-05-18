@@ -102,8 +102,8 @@ section {
     margin: 2rem 0;
 }
 
-.drink-search cite {
-    font-size: 1rem;
+.drink-search img {
+    width: 50%;
 }
 
 .drink-search-box {
