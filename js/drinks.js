@@ -44,10 +44,15 @@ function getdrinkList() {
                     .querySelector("#searchResultTitle")
                     .classList.remove("hideRecipe");
             } else {
-                html = "Sorry, we didn't find any drink!";
+                html = "Sorry, we didn't find any drinks!";
                 drinkList.classList.add("notFound");
             }
 
+            drinkList.innerHTML = html;
+        })
+        .catch(() => {
+            html = "Sorry, we didn't find any drinks!";
+            drinkList.classList.add("notFound");
             drinkList.innerHTML = html;
         });
 }
